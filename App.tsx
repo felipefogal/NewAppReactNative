@@ -5,11 +5,11 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 const App = () => (
   <SafeAreaProvider>
     <SafeAreaView style={container}>
-      <Text style={text}>Bebelzinha diabinha !!!</Text>
+      <Text style={text}>Hello World !!! 🎉</Text>
       <Button
         title="Clique aqui para saber mais"
         color="#e4092d"
-        onPress={() => Alert.alert("Miguel, dê um jeito na sua irmã !!!")}
+        onPress={() => Alert.alert("Não esqueçam da maldição do Hello World...")}
       />
     </SafeAreaView>
   </SafeAreaProvider>
@@ -36,8 +36,15 @@ const lists = StyleSheet.create({
   },
   listItem: {
     fontWeight: "bold",
+    fontFamily: "Cochin"
   },
 });
+
+const otherButtons = StyleSheet.create({
+  buttonContainer: {
+    backgroundColor: "#ff5733"
+  }
+})
 
 const container = StyleSheet.compose(page.container, lists.listContainer);
 const text = StyleSheet.compose(page.text, lists.listItem);
